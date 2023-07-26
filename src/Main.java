@@ -37,6 +37,17 @@ public class Main {
     }
     public static void task3(){
         System.out.println("Задача 3");
+        int sideY = 12_000_000;
+        int birthRate = 17;
+        int deathRate = 8;
+        int growth = birthRate - deathRate;
+        int year = 1;
+        while (year <= 10){
+            sideY += sideY * growth / 1000;
+            System.out.println("Год " + year + ", численность населения составляет " + sideY);
+            year = year + 1;
+        }
+        System.out.println();
     }
     public static void task4(){
         System.out.println("Задача 4");
