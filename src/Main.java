@@ -20,8 +20,20 @@ public class Main {
         }
         System.out.println();
     }
-    public static void task2(){
+    public static void task2() {
         System.out.println("Задача 2");
+        int setNumbers = 1;
+        int setNumbers2 = 10;
+        while (setNumbers <= 10){
+            System.out.print(setNumbers + " ");
+            setNumbers = setNumbers + 1;
+        }
+        System.out.println();
+        while (setNumbers2 >= 1) {
+            System.out.print(setNumbers2 + " ");
+            setNumbers2 = setNumbers2 - 1;
+        }
+        System.out.println();
     }
     public static void task3(){
         System.out.println("Задача 3");
