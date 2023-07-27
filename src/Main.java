@@ -51,6 +51,18 @@ public class Main {
     }
     public static void task4(){
         System.out.println("Задача 4");
+        int startDeposit = 15_000;
+        int totalDeposit = 0;
+        int depositPercentage = 7;
+        int month = 1;
+        while (totalDeposit <= 12_000_000){
+            totalDeposit = totalDeposit + totalDeposit/100;
+            totalDeposit = totalDeposit + startDeposit;
+            if (month % 5 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений составляет " + startDeposit);
+            }
+        }
+        System.out.println("Месяц " + month + ", сумма накоплений составляет " + startDeposit);
     }
     public static void task5(){
         System.out.println("Задача 5");
