@@ -79,9 +79,25 @@ public class Main {
         }
         System.out.println();
     }
+
     public static void task6(){
         System.out.println("Задача 6");
+        int startDeposit = 15_000;
+        int totalDeposit = 0;
+        int depositPercentage = 7;
+        int depositTermYear = 9;
+        int depositTermMonth = 9 * 12;
+        int i = 1;
+        for (;i <= depositTermMonth;i++) {
+            totalDeposit += startDeposit * depositPercentage / 100;
+            totalDeposit = totalDeposit + startDeposit;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + ", сумма накоплений составляет " + totalDeposit);
+            }
+        }
+        System.out.println();
     }
+
     public static void task7(){
         System.out.println("Задача 7");
     }
