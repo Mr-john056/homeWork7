@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8()
     }
     public static void task1(){
         System.out.println("Задача 1");
@@ -100,5 +101,17 @@ public class Main {
 
     public static void task7(){
         System.out.println("Задача 7");
+        int totalDaysOfMonth = 31;
+        int firstFridayMonth = 5;
+        int i = 1;
+        for (;i <= 31;){
+            i++;
+            if (i = 5 && i = i + 7 )
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+        }
+    }
+
+    public static void task8(){
+        System.out.println("Задача 8");
     }
 }
