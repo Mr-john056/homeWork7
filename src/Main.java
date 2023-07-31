@@ -104,7 +104,6 @@ public class Main {
         int totalDaysOfMonth = 31;
         int firstFridayMonth = 5;
         int daysInWeek = 7;
-        //int i = 1;
         for (int day = firstFridayMonth, i = daysInWeek; day <= totalDaysOfMonth; day++, i++){
             if (i == daysInWeek ){
                 System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
@@ -115,5 +114,12 @@ public class Main {
 
     public static void task8(){
         System.out.println("Задача 8");
+        int year = 1975;
+        int firstYear = year - 200;
+        int yearCometFlight = 79;
+        int lastYear = year;
+        while (firstYear >= 1823 && lastYear <= 2123) {
+
+        }
     }
 }
