@@ -114,12 +114,14 @@ public class Main {
 
     public static void task8(){
         System.out.println("Задача 8");
-        int year = 1975;
+        int year = 2023;
         int firstYear = year - 200;
         int yearCometFlight = 79;
-        int lastYear = year;
-        while (firstYear >= 1823 && lastYear <= 2123) {
-
+        int lastYear = year + 100;
+        int cometFlyByYear = firstYear;
+        while (cometFlyByYear % yearCometFlight != 0 && cometFlyByYear <= lastYear) {
+            cometFlyByYear = cometFlyByYear + yearCometFlight;
+            System.out.println("Год полёта кометы: " + cometFlyByYear);
         }
     }
 }
