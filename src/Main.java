@@ -53,10 +53,9 @@ public class Main {
     public static void task4(){
         System.out.println("Задача 4");
         int startDeposit = 15_000;
-        int totalDeposit = 0;
         int depositPercentage = 7;
         int i = 1;
-        for (;totalDeposit <= 12_000_000;i++){
+        for (int totalDeposit = 0;totalDeposit <= 12_000_000;i++){
             totalDeposit += startDeposit * depositPercentage / 100;
             totalDeposit = totalDeposit + startDeposit;
              if (i % 5 == 0) {
@@ -103,13 +102,10 @@ public class Main {
         System.out.println("Задача 7");
         int totalDaysOfMonth = 31;
         int firstFridayMonth = 5;
-        int daysInWeek = 7;
-        for (int day = firstFridayMonth, i = daysInWeek; day <= totalDaysOfMonth; day++, i++){
-            if (i == daysInWeek ){
-                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
-                i= 0;
-            }
-        }
+        for (int day = firstFridayMonth; day <= totalDaysOfMonth; day = day + 7){
+           System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+           }
+        System.out.println();
     }
 
     public static void task8(){
